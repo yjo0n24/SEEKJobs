@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E597ABF705EC9128FE1A115 /* Pods_SEEKJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B30280E28AEB7BDDBF96F /* Pods_SEEKJobs.framework */; };
+		66276C5AE04C6797327AE239 /* Pods_SEEKJobs_SEEKJobsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CB018DCFE8B8DC8FCD3CFD /* Pods_SEEKJobs_SEEKJobsUITests.framework */; };
+		76CFD3582CA7DD2A009CA6F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3572CA7DD2A009CA6F7 /* AppDelegate.swift */; };
+		76CFD35A2CA7DD2A009CA6F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3592CA7DD2A009CA6F7 /* SceneDelegate.swift */; };
+		76CFD35F2CA7DD2A009CA6F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CFD35D2CA7DD2A009CA6F7 /* Main.storyboard */; };
+		76CFD3612CA7DD2D009CA6F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CFD3602CA7DD2D009CA6F7 /* Assets.xcassets */; };
+		76CFD3642CA7DD2D009CA6F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CFD3622CA7DD2D009CA6F7 /* LaunchScreen.storyboard */; };
+		76CFD36F2CA7DD2D009CA6F7 /* SEEKJobsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD36E2CA7DD2D009CA6F7 /* SEEKJobsTests.swift */; };
+		76CFD3792CA7DD2D009CA6F7 /* SEEKJobsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3782CA7DD2D009CA6F7 /* SEEKJobsUITests.swift */; };
+		76CFD37B2CA7DD2D009CA6F7 /* SEEKJobsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD37A2CA7DD2D009CA6F7 /* SEEKJobsUITestsLaunchTests.swift */; };
+		76CFD3882CA7E40C009CA6F7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CFD3872CA7E40C009CA6F7 /* Login.storyboard */; };
+		76CFD38C2CA7E6E2009CA6F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD38B2CA7E6E2009CA6F7 /* LoginViewController.swift */; };
+		76CFD38F2CA7E9FB009CA6F7 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD38E2CA7E9FB009CA6F7 /* SharedConstants.swift */; };
+		76CFD3922CA7EBEE009CA6F7 /* KeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3912CA7EBEE009CA6F7 /* KeyboardToolbar.swift */; };
+		76CFD3942CA7ED53009CA6F7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3932CA7ED53009CA6F7 /* LoginViewModel.swift */; };
+		76CFD3992CA83CE1009CA6F7 /* ApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3982CA83CE1009CA6F7 /* ApiServiceProtocol.swift */; };
+		76CFD39B2CA83D29009CA6F7 /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD39A2CA83D29009CA6F7 /* RequestModels.swift */; };
+		76CFD39D2CA83F0E009CA6F7 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD39C2CA83F0E009CA6F7 /* ApiService.swift */; };
+		76CFD39F2CA84026009CA6F7 /* ApiServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD39E2CA84026009CA6F7 /* ApiServiceError.swift */; };
+		76CFD3A12CA842A4009CA6F7 /* LoginViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3A02CA842A4009CA6F7 /* LoginViewIO.swift */; };
+		76CFD3A32CA847DD009CA6F7 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3A22CA847DD009CA6F7 /* UIExtensions.swift */; };
+		76CFD3A62CA8F6FA009CA6F7 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3A52CA8F6FA009CA6F7 /* KeychainHelper.swift */; };
+		76CFD3A92CA9003B009CA6F7 /* JobListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3A82CA9003B009CA6F7 /* JobListingViewController.swift */; };
+		76CFD3AB2CA901DB009CA6F7 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3AA2CA901DB009CA6F7 /* UserDefaultsHelper.swift */; };
+		76CFD3AE2CA904CF009CA6F7 /* SharedExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3AD2CA904CF009CA6F7 /* SharedExtensions.swift */; };
+		76CFD3B22CA9093B009CA6F7 /* JobListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3B02CA9093B009CA6F7 /* JobListTableViewCell.swift */; };
+		76CFD3B32CA9093B009CA6F7 /* JobListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76CFD3B12CA9093B009CA6F7 /* JobListTableViewCell.xib */; };
+		76CFD3B52CA90CA2009CA6F7 /* JobListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3B42CA90CA2009CA6F7 /* JobListingViewModel.swift */; };
+		76CFD3B72CA90DB4009CA6F7 /* JobListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3B62CA90DB4009CA6F7 /* JobListModel.swift */; };
+		76CFD3B92CA90F08009CA6F7 /* JobListIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3B82CA90F08009CA6F7 /* JobListIO.swift */; };
+		76CFD3BC2CA928E8009CA6F7 /* JobDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3BB2CA928E8009CA6F7 /* JobDetailsViewController.swift */; };
+		76CFD3BE2CA947C6009CA6F7 /* JobDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3BD2CA947C6009CA6F7 /* JobDetailsViewModel.swift */; };
+		76CFD3C02CA94830009CA6F7 /* JobDetailsViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFD3BF2CA94830009CA6F7 /* JobDetailsViewIO.swift */; };
+		D16CF6437D86E32546F307D0 /* Pods_SEEKJobsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED01E9AD147FEE1D3FFEBAF5 /* Pods_SEEKJobsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76CFD36B2CA7DD2D009CA6F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CFD34C2CA7DD2A009CA6F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76CFD3532CA7DD2A009CA6F7;
+			remoteInfo = SEEKJobs;
+		};
+		76CFD3752CA7DD2D009CA6F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CFD34C2CA7DD2A009CA6F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76CFD3532CA7DD2A009CA6F7;
+			remoteInfo = SEEKJobs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05FB50109DBDEA312ED42778 /* Pods-SEEKJobs-SEEKJobsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEEKJobs-SEEKJobsUITests.release.xcconfig"; path = "Target Support Files/Pods-SEEKJobs-SEEKJobsUITests/Pods-SEEKJobs-SEEKJobsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		43DBE3977BFA31CB1BC44FFA /* Pods-SEEKJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEEKJobs.release.xcconfig"; path = "Target Support Files/Pods-SEEKJobs/Pods-SEEKJobs.release.xcconfig"; sourceTree = "<group>"; };
+		6C904E23D9C7B8ADE874CD2F /* Pods-SEEKJobsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEEKJobsTests.release.xcconfig"; path = "Target Support Files/Pods-SEEKJobsTests/Pods-SEEKJobsTests.release.xcconfig"; sourceTree = "<group>"; };
+		741B30280E28AEB7BDDBF96F /* Pods_SEEKJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEEKJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CFD3542CA7DD2A009CA6F7 /* SEEKJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEEKJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CFD3572CA7DD2A009CA6F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76CFD3592CA7DD2A009CA6F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		76CFD35E2CA7DD2A009CA6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76CFD3602CA7DD2D009CA6F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76CFD3632CA7DD2D009CA6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76CFD3652CA7DD2D009CA6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CFD36A2CA7DD2D009CA6F7 /* SEEKJobsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEEKJobsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CFD36E2CA7DD2D009CA6F7 /* SEEKJobsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEEKJobsTests.swift; sourceTree = "<group>"; };
+		76CFD3742CA7DD2D009CA6F7 /* SEEKJobsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEEKJobsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CFD3782CA7DD2D009CA6F7 /* SEEKJobsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEEKJobsUITests.swift; sourceTree = "<group>"; };
+		76CFD37A2CA7DD2D009CA6F7 /* SEEKJobsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEEKJobsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76CFD3872CA7E40C009CA6F7 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		76CFD38B2CA7E6E2009CA6F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		76CFD38E2CA7E9FB009CA6F7 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		76CFD3912CA7EBEE009CA6F7 /* KeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardToolbar.swift; sourceTree = "<group>"; };
+		76CFD3932CA7ED53009CA6F7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		76CFD3982CA83CE1009CA6F7 /* ApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocol.swift; sourceTree = "<group>"; };
+		76CFD39A2CA83D29009CA6F7 /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
+		76CFD39C2CA83F0E009CA6F7 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		76CFD39E2CA84026009CA6F7 /* ApiServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceError.swift; sourceTree = "<group>"; };
+		76CFD3A02CA842A4009CA6F7 /* LoginViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewIO.swift; sourceTree = "<group>"; };
+		76CFD3A22CA847DD009CA6F7 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		76CFD3A52CA8F6FA009CA6F7 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		76CFD3A82CA9003B009CA6F7 /* JobListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingViewController.swift; sourceTree = "<group>"; };
+		76CFD3AA2CA901DB009CA6F7 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		76CFD3AD2CA904CF009CA6F7 /* SharedExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedExtensions.swift; sourceTree = "<group>"; };
+		76CFD3B02CA9093B009CA6F7 /* JobListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListTableViewCell.swift; sourceTree = "<group>"; };
+		76CFD3B12CA9093B009CA6F7 /* JobListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobListTableViewCell.xib; sourceTree = "<group>"; };
+		76CFD3B42CA90CA2009CA6F7 /* JobListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingViewModel.swift; sourceTree = "<group>"; };
+		76CFD3B62CA90DB4009CA6F7 /* JobListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListModel.swift; sourceTree = "<group>"; };
+		76CFD3B82CA90F08009CA6F7 /* JobListIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListIO.swift; sourceTree = "<group>"; };
+		76CFD3BB2CA928E8009CA6F7 /* JobDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewController.swift; sourceTree = "<group>"; };
+		76CFD3BD2CA947C6009CA6F7 /* JobDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewModel.swift; sourceTree = "<group>"; };
+		76CFD3BF2CA94830009CA6F7 /* JobDetailsViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewIO.swift; sourceTree = "<group>"; };
+		AEC02F0C38DBCBA01E432CDE /* Pods-SEEKJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEEKJobs.debug.xcconfig"; path = "Target Support Files/Pods-SEEKJobs/Pods-SEEKJobs.debug.xcconfig"; sourceTree = "<group>"; };
+		B2692FDC7B72C821893AC2A2 /* Pods-SEEKJobsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEEKJobsTests.debug.xcconfig"; path = "Target Support Files/Pods-SEEKJobsTests/Pods-SEEKJobsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9925E49EABFED685DBC109D /* Pods-SEEKJobs-SEEKJobsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEEKJobs-SEEKJobsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SEEKJobs-SEEKJobsUITests/Pods-SEEKJobs-SEEKJobsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2CB018DCFE8B8DC8FCD3CFD /* Pods_SEEKJobs_SEEKJobsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEEKJobs_SEEKJobsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED01E9AD147FEE1D3FFEBAF5 /* Pods_SEEKJobsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEEKJobsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76CFD3512CA7DD2A009CA6F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E597ABF705EC9128FE1A115 /* Pods_SEEKJobs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CFD3672CA7DD2D009CA6F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16CF6437D86E32546F307D0 /* Pods_SEEKJobsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CFD3712CA7DD2D009CA6F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66276C5AE04C6797327AE239 /* Pods_SEEKJobs_SEEKJobsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CB9F99E3101BD086D89189B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				741B30280E28AEB7BDDBF96F /* Pods_SEEKJobs.framework */,
+				E2CB018DCFE8B8DC8FCD3CFD /* Pods_SEEKJobs_SEEKJobsUITests.framework */,
+				ED01E9AD147FEE1D3FFEBAF5 /* Pods_SEEKJobsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76CFD34B2CA7DD2A009CA6F7 = {
+			isa = PBXGroup;
+			children = (
+				76CFD3562CA7DD2A009CA6F7 /* SEEKJobs */,
+				76CFD36D2CA7DD2D009CA6F7 /* SEEKJobsTests */,
+				76CFD3772CA7DD2D009CA6F7 /* SEEKJobsUITests */,
+				76CFD3552CA7DD2A009CA6F7 /* Products */,
+				99E5415A538A2D48C61A33E5 /* Pods */,
+				5CB9F99E3101BD086D89189B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76CFD3552CA7DD2A009CA6F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3542CA7DD2A009CA6F7 /* SEEKJobs.app */,
+				76CFD36A2CA7DD2D009CA6F7 /* SEEKJobsTests.xctest */,
+				76CFD3742CA7DD2D009CA6F7 /* SEEKJobsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76CFD3562CA7DD2A009CA6F7 /* SEEKJobs */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD38D2CA7E9ED009CA6F7 /* Constants */,
+				76CFD3A42CA8F6C7009CA6F7 /* Helpers */,
+				76CFD3952CA83C72009CA6F7 /* API */,
+				76CFD3902CA7EB94009CA6F7 /* CustomViews */,
+				76CFD3892CA7E635009CA6F7 /* Modules */,
+				76CFD3572CA7DD2A009CA6F7 /* AppDelegate.swift */,
+				76CFD3592CA7DD2A009CA6F7 /* SceneDelegate.swift */,
+				76CFD3872CA7E40C009CA6F7 /* Login.storyboard */,
+				76CFD35D2CA7DD2A009CA6F7 /* Main.storyboard */,
+				76CFD3602CA7DD2D009CA6F7 /* Assets.xcassets */,
+				76CFD3622CA7DD2D009CA6F7 /* LaunchScreen.storyboard */,
+				76CFD3652CA7DD2D009CA6F7 /* Info.plist */,
+			);
+			path = SEEKJobs;
+			sourceTree = "<group>";
+		};
+		76CFD36D2CA7DD2D009CA6F7 /* SEEKJobsTests */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD36E2CA7DD2D009CA6F7 /* SEEKJobsTests.swift */,
+			);
+			path = SEEKJobsTests;
+			sourceTree = "<group>";
+		};
+		76CFD3772CA7DD2D009CA6F7 /* SEEKJobsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3782CA7DD2D009CA6F7 /* SEEKJobsUITests.swift */,
+				76CFD37A2CA7DD2D009CA6F7 /* SEEKJobsUITestsLaunchTests.swift */,
+			);
+			path = SEEKJobsUITests;
+			sourceTree = "<group>";
+		};
+		76CFD3892CA7E635009CA6F7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD38A2CA7E64C009CA6F7 /* Login */,
+				76CFD3A72CA9001A009CA6F7 /* JobListing */,
+				76CFD3BA2CA928D3009CA6F7 /* JobDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		76CFD38A2CA7E64C009CA6F7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD38B2CA7E6E2009CA6F7 /* LoginViewController.swift */,
+				76CFD3932CA7ED53009CA6F7 /* LoginViewModel.swift */,
+				76CFD3A02CA842A4009CA6F7 /* LoginViewIO.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		76CFD38D2CA7E9ED009CA6F7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD38E2CA7E9FB009CA6F7 /* SharedConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		76CFD3902CA7EB94009CA6F7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3912CA7EBEE009CA6F7 /* KeyboardToolbar.swift */,
+				76CFD3A22CA847DD009CA6F7 /* UIExtensions.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		76CFD3952CA83C72009CA6F7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3962CA83C8B009CA6F7 /* Models */,
+				76CFD3972CA83CA8009CA6F7 /* Service */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		76CFD3962CA83C8B009CA6F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD39A2CA83D29009CA6F7 /* RequestModels.swift */,
+				76CFD3B62CA90DB4009CA6F7 /* JobListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76CFD3972CA83CA8009CA6F7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3982CA83CE1009CA6F7 /* ApiServiceProtocol.swift */,
+				76CFD39C2CA83F0E009CA6F7 /* ApiService.swift */,
+				76CFD39E2CA84026009CA6F7 /* ApiServiceError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		76CFD3A42CA8F6C7009CA6F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3A52CA8F6FA009CA6F7 /* KeychainHelper.swift */,
+				76CFD3AA2CA901DB009CA6F7 /* UserDefaultsHelper.swift */,
+				76CFD3AD2CA904CF009CA6F7 /* SharedExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		76CFD3A72CA9001A009CA6F7 /* JobListing */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3AF2CA908F7009CA6F7 /* Cells */,
+				76CFD3A82CA9003B009CA6F7 /* JobListingViewController.swift */,
+				76CFD3B42CA90CA2009CA6F7 /* JobListingViewModel.swift */,
+				76CFD3B82CA90F08009CA6F7 /* JobListIO.swift */,
+			);
+			path = JobListing;
+			sourceTree = "<group>";
+		};
+		76CFD3AF2CA908F7009CA6F7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3B02CA9093B009CA6F7 /* JobListTableViewCell.swift */,
+				76CFD3B12CA9093B009CA6F7 /* JobListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		76CFD3BA2CA928D3009CA6F7 /* JobDetails */ = {
+			isa = PBXGroup;
+			children = (
+				76CFD3BB2CA928E8009CA6F7 /* JobDetailsViewController.swift */,
+				76CFD3BD2CA947C6009CA6F7 /* JobDetailsViewModel.swift */,
+				76CFD3BF2CA94830009CA6F7 /* JobDetailsViewIO.swift */,
+			);
+			path = JobDetails;
+			sourceTree = "<group>";
+		};
+		99E5415A538A2D48C61A33E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEC02F0C38DBCBA01E432CDE /* Pods-SEEKJobs.debug.xcconfig */,
+				43DBE3977BFA31CB1BC44FFA /* Pods-SEEKJobs.release.xcconfig */,
+				B9925E49EABFED685DBC109D /* Pods-SEEKJobs-SEEKJobsUITests.debug.xcconfig */,
+				05FB50109DBDEA312ED42778 /* Pods-SEEKJobs-SEEKJobsUITests.release.xcconfig */,
+				B2692FDC7B72C821893AC2A2 /* Pods-SEEKJobsTests.debug.xcconfig */,
+				6C904E23D9C7B8ADE874CD2F /* Pods-SEEKJobsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76CFD3532CA7DD2A009CA6F7 /* SEEKJobs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CFD37E2CA7DD2D009CA6F7 /* Build configuration list for PBXNativeTarget "SEEKJobs" */;
+			buildPhases = (
+				2C3362CE1E545FDFA5F9F0A9 /* [CP] Check Pods Manifest.lock */,
+				76CFD3502CA7DD2A009CA6F7 /* Sources */,
+				76CFD3512CA7DD2A009CA6F7 /* Frameworks */,
+				76CFD3522CA7DD2A009CA6F7 /* Resources */,
+				3F3023959C83976E28D1877A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SEEKJobs;
+			productName = SEEKJobs;
+			productReference = 76CFD3542CA7DD2A009CA6F7 /* SEEKJobs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76CFD3692CA7DD2D009CA6F7 /* SEEKJobsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CFD3812CA7DD2D009CA6F7 /* Build configuration list for PBXNativeTarget "SEEKJobsTests" */;
+			buildPhases = (
+				A9F1F71996C40E49808390AE /* [CP] Check Pods Manifest.lock */,
+				76CFD3662CA7DD2D009CA6F7 /* Sources */,
+				76CFD3672CA7DD2D009CA6F7 /* Frameworks */,
+				76CFD3682CA7DD2D009CA6F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CFD36C2CA7DD2D009CA6F7 /* PBXTargetDependency */,
+			);
+			name = SEEKJobsTests;
+			productName = SEEKJobsTests;
+			productReference = 76CFD36A2CA7DD2D009CA6F7 /* SEEKJobsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76CFD3732CA7DD2D009CA6F7 /* SEEKJobsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CFD3842CA7DD2D009CA6F7 /* Build configuration list for PBXNativeTarget "SEEKJobsUITests" */;
+			buildPhases = (
+				186FB56472EF22D52503BE80 /* [CP] Check Pods Manifest.lock */,
+				76CFD3702CA7DD2D009CA6F7 /* Sources */,
+				76CFD3712CA7DD2D009CA6F7 /* Frameworks */,
+				76CFD3722CA7DD2D009CA6F7 /* Resources */,
+				B092FFF33E84158D0840A121 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CFD3762CA7DD2D009CA6F7 /* PBXTargetDependency */,
+			);
+			name = SEEKJobsUITests;
+			productName = SEEKJobsUITests;
+			productReference = 76CFD3742CA7DD2D009CA6F7 /* SEEKJobsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76CFD34C2CA7DD2A009CA6F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					76CFD3532CA7DD2A009CA6F7 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					76CFD3692CA7DD2D009CA6F7 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 76CFD3532CA7DD2A009CA6F7;
+					};
+					76CFD3732CA7DD2D009CA6F7 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 76CFD3532CA7DD2A009CA6F7;
+					};
+				};
+			};
+			buildConfigurationList = 76CFD34F2CA7DD2A009CA6F7 /* Build configuration list for PBXProject "SEEKJobs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76CFD34B2CA7DD2A009CA6F7;
+			productRefGroup = 76CFD3552CA7DD2A009CA6F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76CFD3532CA7DD2A009CA6F7 /* SEEKJobs */,
+				76CFD3692CA7DD2D009CA6F7 /* SEEKJobsTests */,
+				76CFD3732CA7DD2D009CA6F7 /* SEEKJobsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76CFD3522CA7DD2A009CA6F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CFD3882CA7E40C009CA6F7 /* Login.storyboard in Resources */,
+				76CFD3642CA7DD2D009CA6F7 /* LaunchScreen.storyboard in Resources */,
+				76CFD3612CA7DD2D009CA6F7 /* Assets.xcassets in Resources */,
+				76CFD3B32CA9093B009CA6F7 /* JobListTableViewCell.xib in Resources */,
+				76CFD35F2CA7DD2A009CA6F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CFD3682CA7DD2D009CA6F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CFD3722CA7DD2D009CA6F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		186FB56472EF22D52503BE80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SEEKJobs-SEEKJobsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C3362CE1E545FDFA5F9F0A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SEEKJobs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F3023959C83976E28D1877A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEEKJobs/Pods-SEEKJobs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEEKJobs/Pods-SEEKJobs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SEEKJobs/Pods-SEEKJobs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F1F71996C40E49808390AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SEEKJobsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B092FFF33E84158D0840A121 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEEKJobs-SEEKJobsUITests/Pods-SEEKJobs-SEEKJobsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEEKJobs-SEEKJobsUITests/Pods-SEEKJobs-SEEKJobsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SEEKJobs-SEEKJobsUITests/Pods-SEEKJobs-SEEKJobsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76CFD3502CA7DD2A009CA6F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CFD3A12CA842A4009CA6F7 /* LoginViewIO.swift in Sources */,
+				76CFD3992CA83CE1009CA6F7 /* ApiServiceProtocol.swift in Sources */,
+				76CFD3B52CA90CA2009CA6F7 /* JobListingViewModel.swift in Sources */,
+				76CFD3A32CA847DD009CA6F7 /* UIExtensions.swift in Sources */,
+				76CFD38C2CA7E6E2009CA6F7 /* LoginViewController.swift in Sources */,
+				76CFD39F2CA84026009CA6F7 /* ApiServiceError.swift in Sources */,
+				76CFD38F2CA7E9FB009CA6F7 /* SharedConstants.swift in Sources */,
+				76CFD3582CA7DD2A009CA6F7 /* AppDelegate.swift in Sources */,
+				76CFD3922CA7EBEE009CA6F7 /* KeyboardToolbar.swift in Sources */,
+				76CFD3BE2CA947C6009CA6F7 /* JobDetailsViewModel.swift in Sources */,
+				76CFD3AE2CA904CF009CA6F7 /* SharedExtensions.swift in Sources */,
+				76CFD3A92CA9003B009CA6F7 /* JobListingViewController.swift in Sources */,
+				76CFD3AB2CA901DB009CA6F7 /* UserDefaultsHelper.swift in Sources */,
+				76CFD39D2CA83F0E009CA6F7 /* ApiService.swift in Sources */,
+				76CFD35A2CA7DD2A009CA6F7 /* SceneDelegate.swift in Sources */,
+				76CFD3A62CA8F6FA009CA6F7 /* KeychainHelper.swift in Sources */,
+				76CFD3B92CA90F08009CA6F7 /* JobListIO.swift in Sources */,
+				76CFD3B22CA9093B009CA6F7 /* JobListTableViewCell.swift in Sources */,
+				76CFD3B72CA90DB4009CA6F7 /* JobListModel.swift in Sources */,
+				76CFD3BC2CA928E8009CA6F7 /* JobDetailsViewController.swift in Sources */,
+				76CFD3C02CA94830009CA6F7 /* JobDetailsViewIO.swift in Sources */,
+				76CFD39B2CA83D29009CA6F7 /* RequestModels.swift in Sources */,
+				76CFD3942CA7ED53009CA6F7 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CFD3662CA7DD2D009CA6F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CFD36F2CA7DD2D009CA6F7 /* SEEKJobsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CFD3702CA7DD2D009CA6F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CFD37B2CA7DD2D009CA6F7 /* SEEKJobsUITestsLaunchTests.swift in Sources */,
+				76CFD3792CA7DD2D009CA6F7 /* SEEKJobsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76CFD36C2CA7DD2D009CA6F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76CFD3532CA7DD2A009CA6F7 /* SEEKJobs */;
+			targetProxy = 76CFD36B2CA7DD2D009CA6F7 /* PBXContainerItemProxy */;
+		};
+		76CFD3762CA7DD2D009CA6F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76CFD3532CA7DD2A009CA6F7 /* SEEKJobs */;
+			targetProxy = 76CFD3752CA7DD2D009CA6F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76CFD35D2CA7DD2A009CA6F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CFD35E2CA7DD2A009CA6F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76CFD3622CA7DD2D009CA6F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CFD3632CA7DD2D009CA6F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76CFD37C2CA7DD2D009CA6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76CFD37D2CA7DD2D009CA6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76CFD37F2CA7DD2D009CA6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC02F0C38DBCBA01E432CDE /* Pods-SEEKJobs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WK658THW5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SEEKJobs/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjoon.SEEKJobs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76CFD3802CA7DD2D009CA6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43DBE3977BFA31CB1BC44FFA /* Pods-SEEKJobs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WK658THW5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SEEKJobs/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjoon.SEEKJobs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76CFD3822CA7DD2D009CA6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2692FDC7B72C821893AC2A2 /* Pods-SEEKJobsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WK658THW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjoon.SEEKJobsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEEKJobs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SEEKJobs";
+			};
+			name = Debug;
+		};
+		76CFD3832CA7DD2D009CA6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C904E23D9C7B8ADE874CD2F /* Pods-SEEKJobsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WK658THW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjoon.SEEKJobsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEEKJobs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SEEKJobs";
+			};
+			name = Release;
+		};
+		76CFD3852CA7DD2D009CA6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9925E49EABFED685DBC109D /* Pods-SEEKJobs-SEEKJobsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WK658THW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjoon.SEEKJobsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SEEKJobs;
+			};
+			name = Debug;
+		};
+		76CFD3862CA7DD2D009CA6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05FB50109DBDEA312ED42778 /* Pods-SEEKJobs-SEEKJobsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WK658THW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjoon.SEEKJobsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SEEKJobs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76CFD34F2CA7DD2A009CA6F7 /* Build configuration list for PBXProject "SEEKJobs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CFD37C2CA7DD2D009CA6F7 /* Debug */,
+				76CFD37D2CA7DD2D009CA6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CFD37E2CA7DD2D009CA6F7 /* Build configuration list for PBXNativeTarget "SEEKJobs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CFD37F2CA7DD2D009CA6F7 /* Debug */,
+				76CFD3802CA7DD2D009CA6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CFD3812CA7DD2D009CA6F7 /* Build configuration list for PBXNativeTarget "SEEKJobsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CFD3822CA7DD2D009CA6F7 /* Debug */,
+				76CFD3832CA7DD2D009CA6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CFD3842CA7DD2D009CA6F7 /* Build configuration list for PBXNativeTarget "SEEKJobsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CFD3852CA7DD2D009CA6F7 /* Debug */,
+				76CFD3862CA7DD2D009CA6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76CFD34C2CA7DD2A009CA6F7 /* Project object */;
+}

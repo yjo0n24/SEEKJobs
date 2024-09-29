@@ -1,0 +1,6 @@
+framework module Pods_SEEKJobs_SEEKJobsUITests {
+  umbrella header "Pods-SEEKJobs-SEEKJobsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
